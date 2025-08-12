@@ -26,3 +26,4 @@ package-lock.json
 .astro
 .mcp.json
 .idea
+chats.db
