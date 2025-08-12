@@ -1,0 +1,55 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Features",
+      "url": "/feature/"
+    },
+    {
+      "name": "About",
+      "url": "/about/"
+    },
+    {
+      "name": "Pricing",
+      "url": "/pricing/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact/"
+    }
+  ],
+  "footer": [
+    { "name": "Privacy Policy", "url": "/privacy-policy/" },
+    { "name": "Terms & Conditions", "url": "/terms-conditions/" }
+  ],
+  "company": [
+    { "name": "About Us", "url": "/about/" },
+    { "name": "Features", "url": "/feature/" },
+    { "name": "Our Clients", "url": "/#clients" },
+    { "name": "Contact", "url": "/contact/" }
+  ],
+  "product": [
+    { "name": "AI Scene Analysis", "url": "/feature/#scene-analysis" },
+    { "name": "Keyword Targeting", "url": "/feature/#keyword-targeting" },
+    { "name": "Real-time Integration", "url": "/feature/#integration" },
+    { "name": "Analytics Dashboard", "url": "/feature/#analytics" }
+  ],
+  "resources": [
+    { "name": "Blog", "url": "/blog/" },
+    { "name": "Documentation", "url": "#" },
+    { "name": "API Reference", "url": "#" },
+    { "name": "Case Studies", "url": "#" }
+  ],
+  "services": [
+    { "name": "Request Demo", "url": "/contact/" },
+    { "name": "Support", "url": "/contact/" },
+    { "name": "Partnership", "url": "/contact/" }
+  ]
+}

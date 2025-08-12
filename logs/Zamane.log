@@ -1,0 +1,44 @@
+2025.08.12 13:36:26.274 [AWT-EventQueue-0] DEBUG t.g.t.u.esya.tssclient.client.ZDAyar [-1] - ZD Ayar olusturuluyor.
+2025.08.12 13:36:26.275 [AWT-EventQueue-0] DEBUG t.g.t.u.esya.tssclient.client.ZDAyar [-1] - Default policy dosyasi (policy.xml) okunuyor.
+2025.08.12 13:36:26.275 [AWT-EventQueue-0] ERROR t.g.t.u.esya.tssclient.client.ZDAyar [-1] - Policy dosyasi okunurken hata olustu.
+2025.08.12 13:36:26.988 [AWT-EventQueue-0] INFO  t.g.t.u.esya.tssclient.gui.Zamane [-1] - Starting Zamane. Version 3.1.19
+2025.08.12 13:36:26.995 [AWT-EventQueue-0] ERROR t.g.t.u.e.a.common.util.LicenseUtil [-1] - Error in setting license
+2025.08.12 13:36:26.997 [AWT-EventQueue-0] ERROR t.g.t.u.esya.tssclient.gui.Zamane [-1] - Lisans kontrolu basarisiz
+tr.gov.tubitak.uekae.esya.api.common.ESYAException: Lisans Kontrol Edilemedi
+	at tr.gov.tubitak.uekae.esya.tssclient.gui.Zamane.initLcn(Zamane.java) ~[tss-client-3.1.19.jar:3.1.19]
+	at tr.gov.tubitak.uekae.esya.tssclient.gui.v.run(v.java) ~[tss-client-3.1.19.jar:3.1.19]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[na:na]
+2025.08.12 13:37:20.773 [AWT-EventQueue-0] DEBUG t.g.t.u.esya.tssclient.client.ZDAyar [-1] - ZD Ayar olusturuluyor.
+2025.08.12 13:37:20.775 [AWT-EventQueue-0] DEBUG t.g.t.u.esya.tssclient.client.ZDAyar [-1] - Default policy dosyasi (policy.xml) okunuyor.
+2025.08.12 13:37:20.775 [AWT-EventQueue-0] ERROR t.g.t.u.esya.tssclient.client.ZDAyar [-1] - Policy dosyasi okunurken hata olustu.
+2025.08.12 13:37:21.415 [AWT-EventQueue-0] INFO  t.g.t.u.esya.tssclient.gui.Zamane [-1] - Starting Zamane. Version 3.1.19
+2025.08.12 13:37:21.421 [AWT-EventQueue-0] ERROR t.g.t.u.e.a.common.util.LicenseUtil [-1] - Error in setting license
+2025.08.12 13:37:21.422 [AWT-EventQueue-0] ERROR t.g.t.u.esya.tssclient.gui.Zamane [-1] - Lisans kontrolu basarisiz
+tr.gov.tubitak.uekae.esya.api.common.ESYAException: Lisans Kontrol Edilemedi
+	at tr.gov.tubitak.uekae.esya.tssclient.gui.Zamane.initLcn(Zamane.java) ~[tss-client-3.1.19.jar:3.1.19]
+	at tr.gov.tubitak.uekae.esya.tssclient.gui.v.run(v.java) ~[tss-client-3.1.19.jar:3.1.19]
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720) ~[na:na]
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[na:na]
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[na:na]
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[na:na]

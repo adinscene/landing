@@ -1,0 +1,4 @@
+[2025-Ağu-12 13:41:05,377 ÖS] [DEBUG] [33402] --- [           main] [tr.gov.tubitak.uekae.esya.tssclient.console.TssClientConsole] : Ozellestirilmis log4j2 konfigurasyon dosyasi bulunamadi. Default log4j2.xml dosyasi kullanilacak.
+[2025-Ağu-12 13:41:05,432 ÖS] [INFO ] [33402] --- [           main] [tr.gov.tubitak.uekae.esya.tssclient.console.TssClientConsole] : Zaman damgasi kredi sorgulama islemi yapilacak.
+[2025-Ağu-12 13:41:05,449 ÖS] [DEBUG] [33402] --- [           main] [gnu.crypto.util.PRNG                              ] : UEKAE Crypto Card does not exist:com/sun/crypto/provider/UEKAECryptoCard
+[2025-Ağu-12 13:41:05,618 ÖS] [INFO ] [33402] --- [           main] [tr.gov.tubitak.uekae.esya.tssclient.console.TssClientConsole] : Kalan kredi: 10000
