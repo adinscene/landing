@@ -1,0 +1,245 @@
+---
+import { getCollection } from "astro:content";
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/layouts/partials/PageHeader.astro";
+
+export async function getStaticPaths() {
+  const features = await getCollection("features");
+  return features.map((feature) => ({
+    params: { slug: feature.slug },
+    props: { feature },
+  }));
+}
+
+const { feature } = Astro.props;
+const { Content } = await feature.render();
+const { title, meta_title, description, image, hero, key_features, capabilities, technical, categories, use_cases, stats, cta, case_study } = feature.data;
+---
+
+<Base title={meta_title || title} description={description} image={image}>
+  <!-- Hero Section -->
+  {hero && (
+    <section class="section">
+      <div class="container">
+        <div class="row items-center">
+          <div class="lg:col-6">
+            <span class="mb-4 inline-block font-medium uppercase text-primary">
+              {hero.subtitle}
+            </span>
+            <h1 class="mb-6 text-4xl font-bold lg:text-5xl">
+              {hero.title}
+            </h1>
+            <p class="mb-8 text-lg text-text-light">
+              {hero.description}
+            </p>
+            <div class="flex flex-wrap gap-4">
+              {hero.buttons?.map((button) => (
+                <a
+                  href={button.link}
+                  class={`btn ${button.style === 'primary' ? 'btn-primary' : 'btn-outline'}`}
+                >
+                  {button.label}
+                </a>
+              ))}
+            </div>
+          </div>
+          {hero.image && (
+            <div class="lg:col-6">
+              <img src={hero.image} alt={hero.title} class="w-full rounded-lg" />
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Key Features -->
+  {key_features && (
+    <section class="section bg-theme-light">
+      <div class="container">
+        <h2 class="mb-12 text-center text-3xl font-bold">{key_features.title}</h2>
+        <div class="row">
+          {key_features.items?.map((item) => (
+            <div class="md:col-4 mb-8">
+              <div class="text-center">
+                <img src={item.icon} alt={item.title} class="mx-auto mb-4 h-16 w-16" />
+                <h3 class="mb-2 text-xl font-semibold">{item.title}</h3>
+                <p class="text-text-light">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Capabilities -->
+  {capabilities && (
+    <section class="section">
+      <div class="container">
+        <h2 class="mb-12 text-center text-3xl font-bold">{capabilities.title}</h2>
+        <div class="row">
+          {capabilities.items?.map((item) => (
+            <div class="md:col-4 mb-8">
+              <div class="text-center">
+                <img src={item.icon} alt={item.title} class="mx-auto mb-4 h-16 w-16" />
+                <h3 class="mb-2 text-2xl font-bold text-primary">{item.title}</h3>
+                <p class="text-text-light">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Technical Details -->
+  {technical && (
+    <section class="section bg-theme-light">
+      <div class="container">
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-3xl font-bold">{technical.title}</h2>
+          <p class="text-lg text-text-light">{technical.description}</p>
+        </div>
+        <div class="row">
+          {technical.features?.map((feature) => (
+            <div class="lg:col-6 mb-8">
+              <h3 class="mb-3 text-xl font-semibold">{feature.title}</h3>
+              <p class="mb-4 text-text-light">{feature.description}</p>
+              {feature.details && (
+                <ul class="list-disc pl-5 text-sm text-text-light">
+                  {feature.details.map((detail) => (
+                    <li>{detail}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Categories -->
+  {categories && (
+    <section class="section">
+      <div class="container">
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-3xl font-bold">{categories.title}</h2>
+          <p class="text-lg text-text-light">{categories.description}</p>
+        </div>
+        <div class="row">
+          {categories.list?.map((category) => (
+            <div class="lg:col-6 mb-8">
+              <div class="rounded-lg border p-6">
+                <div class="flex items-center mb-4">
+                  <img src={category.icon} alt={category.title} class="mr-3 h-10 w-10" />
+                  <h3 class="text-xl font-semibold">{category.title}</h3>
+                </div>
+                <p class="mb-4 text-text-light">{category.description}</p>
+                {category.examples && (
+                  <ul class="space-y-2">
+                    {category.examples.map((example) => (
+                      <li class="text-sm text-text-light">• {example}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Stats Section -->
+  {stats && (
+    <section class="section bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          {stats.map((stat) => (
+            <div class="md:col-3 mb-8">
+              <div class="text-center">
+                <div class="mb-2 text-4xl font-bold">{stat.value}</div>
+                <div class="text-white/80">{stat.label}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Content Section -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          <div class="content prose max-w-none">
+            <Content />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study -->
+  {case_study && (
+    <section class="section bg-theme-light">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="lg:col-10">
+            <h2 class="mb-8 text-center text-3xl font-bold">{case_study.title}</h2>
+            <p class="mb-8 text-center text-lg">{case_study.description}</p>
+            
+            {case_study.results && (
+              <div class="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+                {case_study.results.map((result) => (
+                  <div class="text-center">
+                    <div class="text-2xl font-bold text-primary">{result.value || result}</div>
+                    <div class="text-sm text-text-light">{result.label || result}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+            
+            {case_study.quote && (
+              <blockquote class="border-l-4 border-primary pl-6 italic">
+                "{case_study.quote}"
+                <footer class="mt-2 text-sm">
+                  — {case_study.author}, {case_study.position}
+                </footer>
+              </blockquote>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA Section -->
+  {cta && (
+    <section class="section">
+      <div class="container">
+        <div class="rounded-xl bg-gradient-to-r from-primary to-secondary px-8 py-12 text-center text-white">
+          <h2 class="mb-4 text-3xl font-bold">{cta.title}</h2>
+          <p class="mb-8 text-lg">{cta.description}</p>
+          {cta.button && (
+            <a href={cta.button.link} class="btn btn-white">
+              {cta.button.label}
+            </a>
+          )}
+          {cta.buttons && (
+            <div class="flex justify-center gap-4">
+              {cta.buttons.map((button) => (
+                <a href={button.link} class={`btn ${button.style === 'primary' ? 'btn-white' : 'btn-outline-white'}`}>
+                  {button.label}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>

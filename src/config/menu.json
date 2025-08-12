@@ -5,8 +5,138 @@
       "url": "/"
     },
     {
+      "name": "Solutions",
+      "url": "",
+      "hasMegamenu": true,
+      "children": [
+        {
+          "name": "Content Types",
+          "children": [
+            {
+              "name": "VOD Content",
+              "description": "Monetize your on-demand video library",
+              "url": "/solutions/vod-content/"
+            },
+            {
+              "name": "Live Content",
+              "description": "Real-time ad insertion for live streams",
+              "url": "/solutions/live-content/"
+            },
+            {
+              "name": "Shoppable Ads",
+              "description": "Interactive commerce within videos",
+              "url": "/solutions/shoppable-ads/"
+            }
+          ]
+        },
+        {
+          "name": "Ad Formats",
+          "children": [
+            {
+              "name": "In-Stream Ads",
+              "description": "Pre-roll, mid-roll, and post-roll",
+              "url": "/solutions/in-stream-ads/"
+            },
+            {
+              "name": "Overlay Ads",
+              "description": "Non-intrusive contextual overlays",
+              "url": "/solutions/overlay-ads/"
+            },
+            {
+              "name": "Interactive Ads",
+              "description": "Engaging viewer experiences",
+              "url": "/solutions/interactive-ads/"
+            }
+          ]
+        },
+        {
+          "name": "Industries",
+          "children": [
+            {
+              "name": "Broadcasting",
+              "description": "TV networks and channels",
+              "url": "/solutions/broadcasting/"
+            },
+            {
+              "name": "Streaming Platforms",
+              "description": "OTT and VOD services",
+              "url": "/solutions/streaming/"
+            },
+            {
+              "name": "Content Creators",
+              "description": "YouTubers and influencers",
+              "url": "/solutions/content-creators/"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Features",
-      "url": "/feature/"
+      "url": "",
+      "hasMegamenu": true,
+      "children": [
+        {
+          "name": "AI Technologies",
+          "children": [
+            {
+              "name": "Transcript Recognition",
+              "description": "Speech-to-text for keyword targeting",
+              "url": "/features/transcript-recognition/"
+            },
+            {
+              "name": "Scene Visual Recognition",
+              "description": "AI-powered scene analysis",
+              "url": "/features/scene-recognition/"
+            },
+            {
+              "name": "ACR Technology",
+              "description": "Automated content recognition",
+              "url": "/features/acr-technology/"
+            }
+          ]
+        },
+        {
+          "name": "Analytics & Insights",
+          "children": [
+            {
+              "name": "Real-time Analytics",
+              "description": "Live performance metrics",
+              "url": "/features/real-time-analytics/"
+            },
+            {
+              "name": "Campaign Management",
+              "description": "Complete campaign control",
+              "url": "/features/campaign-management/"
+            },
+            {
+              "name": "Revenue Optimization",
+              "description": "Maximize your earnings",
+              "url": "/features/revenue-optimization/"
+            }
+          ]
+        },
+        {
+          "name": "Integration",
+          "children": [
+            {
+              "name": "API Integration",
+              "description": "RESTful APIs for seamless connection",
+              "url": "/features/api-integration/"
+            },
+            {
+              "name": "Ad Server Integration",
+              "description": "Connect with any ad platform",
+              "url": "/features/ad-server-integration/"
+            },
+            {
+              "name": "AWS Infrastructure",
+              "description": "Scalable cloud architecture",
+              "url": "/features/aws-infrastructure/"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "About",
@@ -15,14 +145,6 @@
     {
       "name": "Pricing",
       "url": "/pricing/"
-    },
-    {
-      "name": "Blog",
-      "url": "/blog/"
-    },
-    {
-      "name": "Contact",
-      "url": "/contact/"
     }
   ],
   "footer": [
@@ -31,25 +153,25 @@
   ],
   "company": [
     { "name": "About Us", "url": "/about/" },
-    { "name": "Features", "url": "/feature/" },
     { "name": "Our Clients", "url": "/#clients" },
+    { "name": "Case Studies", "url": "/blog/" },
     { "name": "Contact", "url": "/contact/" }
   ],
   "product": [
-    { "name": "AI Scene Analysis", "url": "/feature/#scene-analysis" },
-    { "name": "Keyword Targeting", "url": "/feature/#keyword-targeting" },
-    { "name": "Real-time Integration", "url": "/feature/#integration" },
-    { "name": "Analytics Dashboard", "url": "/feature/#analytics" }
+    { "name": "VOD Content", "url": "/solutions/vod-content/" },
+    { "name": "Live Content", "url": "/solutions/live-content/" },
+    { "name": "Transcript Recognition", "url": "/features/transcript-recognition/" },
+    { "name": "Scene Recognition", "url": "/features/scene-recognition/" }
   ],
   "resources": [
     { "name": "Blog", "url": "/blog/" },
     { "name": "Documentation", "url": "#" },
     { "name": "API Reference", "url": "#" },
-    { "name": "Case Studies", "url": "#" }
+    { "name": "Support", "url": "/contact/" }
   ],
   "services": [
     { "name": "Request Demo", "url": "/contact/" },
-    { "name": "Support", "url": "/contact/" },
-    { "name": "Partnership", "url": "/contact/" }
+    { "name": "Partnership", "url": "/contact/" },
+    { "name": "Enterprise Solutions", "url": "/pricing/" }
   ]
 }

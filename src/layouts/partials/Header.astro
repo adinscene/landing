@@ -74,33 +74,32 @@ const { pathname } = Astro.url;
                     </svg>
                   </span>
                 </span>
-                <div class="mega-menu-wrapper max-lg:hidden max-lg:group-[.active]:flex max-lg:group-[.active]:flex-col lg:invisible lg:absolute lg:left-0 lg:flex lg:opacity-0 lg:transition-all lg:duration-300 lg:group-hover:visible lg:group-hover:opacity-100">
+                <div class="mega-menu-wrapper max-lg:hidden max-lg:group-[.active]:flex max-lg:group-[.active]:flex-col lg:invisible lg:absolute lg:left-0 lg:flex lg:gap-8 lg:opacity-0 lg:transition-all lg:duration-300 lg:group-hover:visible lg:group-hover:opacity-100">
                   {menu.children?.map((subchild, index) => (
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3">
                       {subchild.name && (
                         <p
-                          class="text-[10px]/none uppercase tracking-wider opacity-50"
+                          class="text-[10px]/none uppercase tracking-wider opacity-50 whitespace-nowrap"
                           set:html={subchild.name}
                         />
                       )}
                       <ul
-                        class={`nav-dropdown-list ${index === 0 ? "flex w-[150px] flex-col gap-5" : "gap-x-16 sm:columns-2 md:columns-3 lg:grid lg:grid-cols-[repeat(3,_1fr)]"}`}>
+                        class="nav-dropdown-list flex flex-col gap-2">
                         {subchild.children?.map((child) => (
-                          <li
-                            class={`nav-dropdown-item ${index === 0 ? "" : ""}`}>
+                          <li class="nav-dropdown-item">
                             <a
                               href={child.url}
                               aria-label={child.name}
-                              class={`nav-dropdown-link block ${
+                              class={`nav-dropdown-link block whitespace-nowrap ${
                                 ((pathname === `${child.url}/` ||
                                   pathname === child.url) &&
                                   "active") ||
                                 ""
                               }`}>
-                              {child.name}
+                              <span class="font-medium">{child.name}</span>
                             </a>
-                            {child.name && (
-                              <p class="text-sm opacity-50">
+                            {child.description && (
+                              <p class="text-xs opacity-60 mt-1 max-w-[200px]">
                                 {child.description}
                               </p>
                             )}
