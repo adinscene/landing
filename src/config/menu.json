@@ -141,10 +141,6 @@
     {
       "name": "About",
       "url": "/about/"
-    },
-    {
-      "name": "Pricing",
-      "url": "/pricing/"
     }
   ],
   "footer": [
@@ -172,6 +168,6 @@
   "services": [
     { "name": "Request Demo", "url": "/contact/" },
     { "name": "Partnership", "url": "/contact/" },
-    { "name": "Enterprise Solutions", "url": "/pricing/" }
+    { "name": "Enterprise Solutions", "url": "/contact/" }
   ]
 }

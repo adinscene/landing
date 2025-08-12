@@ -16,7 +16,7 @@ hero:
       link: "/contact/"
       style: "primary"
     - label: "View Pricing"
-      link: "/pricing/"
+      link: "/contact/"
       style: "outline"
 
 # Key Benefits
