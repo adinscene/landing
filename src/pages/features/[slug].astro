@@ -1,18 +1,18 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Base from "@/layouts/Base.astro";
 import PageHeader from "@/layouts/partials/PageHeader.astro";
 
 export async function getStaticPaths() {
   const features = await getCollection("features");
   return features.map((feature) => ({
-    params: { slug: feature.slug },
+    params: { slug: feature.id },
     props: { feature },
   }));
 }
 
 const { feature } = Astro.props;
-const { Content } = await feature.render();
+const { Content } = await render(feature);
 const { title, meta_title, description, image, hero, key_features, capabilities, technical, categories, use_cases, stats, cta, case_study } = feature.data;
 ---
 

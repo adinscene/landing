@@ -4,9 +4,11 @@ import {
   changelog,
   contact,
   feature,
+  features,
   integration,
   pages,
   pricing,
+  solutions,
 } from "./types/pages.collections";
 import {
   aboutBannerSection,
@@ -35,9 +37,11 @@ export const collections = {
   changelog,
   contact,
   feature,
+  features,
   integration,
   pages,
   pricing,
+  solutions,
 
   // Sections
   aboutBannerSection,

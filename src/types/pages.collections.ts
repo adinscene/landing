@@ -179,3 +179,49 @@ export const pricing = defineCollection({
     }),
   }),
 });
+
+export const solutions = defineCollection({
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "src/content/solutions",
+  }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string(),
+    image: z.string().optional(),
+    draft: z.boolean().optional(),
+    hero: z.any().optional(),
+    benefits: z.any().optional(),
+    features: z.any().optional(),
+    process: z.any().optional(),
+    use_cases: z.any().optional(),
+    stats: z.any().optional(),
+    cta: z.any().optional(),
+    testimonial: z.any().optional(),
+    case_study: z.any().optional(),
+  }),
+});
+
+export const features = defineCollection({
+  loader: glob({
+    pattern: "**/*.{md,mdx}",
+    base: "src/content/features",
+  }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string(),
+    image: z.string().optional(),
+    draft: z.boolean().optional(),
+    hero: z.any().optional(),
+    key_features: z.any().optional(),
+    capabilities: z.any().optional(),
+    technical: z.any().optional(),
+    categories: z.any().optional(),
+    use_cases: z.any().optional(),
+    stats: z.any().optional(),
+    cta: z.any().optional(),
+    case_study: z.any().optional(),
+  }),
+});
