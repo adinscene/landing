@@ -36,8 +36,11 @@ contact_form:
   list:
     - icon: "/images/icons/svg/phone.svg"
       title: Sales Inquiries
-      description: +1 (555) 123-4567
+      description: +1 (302) 213-8124
     - icon: "/images/icons/svg/email.svg"
       title: Email Us
-      description: hello@adinscene.com
+      description: info@codeck.software
+    - icon: "/images/icons/svg/map.svg"
+      title: Office Address
+      description: 8 The Green #11307, Dover, County of Kent, Delaware 19901
 ---
