@@ -1,9 +1,9 @@
 ---
-title: Connect with 100+ tools
-description: Gain invaluable predictive analytics and actionable insights <br/> empowering your to make data-driven decisions.
+title: Seamless Integration Ecosystem
+description: Connect with leading video players, ad platforms, and AI services <br/> to maximize your video content monetization.
 
 button:
   enable: true
-  label: Explore All Tools
+  label: Explore All Integrations
   link: "/integration/"
 ---
